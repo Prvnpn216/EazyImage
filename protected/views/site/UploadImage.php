@@ -10,13 +10,16 @@
 	'id'=>'filerepo-UploadImage-form',
 	'enableAjaxValidation'=>false,
 	'htmlOptions' => array('enctype' => 'multipart/form-data'),
-)); ?>
+	)); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
-	<div class = "row">
-		<?php echo '<h1>Select a Size</h1>'; ?>
-		
+	<div class="panel-header" style='border:1px dashed black'>
+		<div class = "row"style="margin-left:50px">
+			<?php echo '<b>Available 3 Sizes</b>'; ?>
+			
+		</div>
 	</div>
+	<div class="panel-body">
 	<?php echo $form->errorSummary($model); ?>
 	
 	<div class = "row">
@@ -43,11 +46,12 @@
 		<?php echo $form->error($model,'s_size'); ?>
 	</div>
 
-	
-	<center><div class="row buttons">
-		<?php echo CHtml::submitButton('Submit'); ?>
-	</div></center>
+	<center>
+	<div class="row">
+		<input type="submit" class="btn btn-primary" value="Resize it" >
+	</div>
+	</center>
 
 <?php $this->endWidget(); ?>
-
+</div>
 </div><!-- form -->

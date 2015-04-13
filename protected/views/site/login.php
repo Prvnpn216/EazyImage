@@ -45,8 +45,8 @@ $this->breadcrumbs=array(
 		<?php echo $form->error($model,'rememberMe'); ?>
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Login'); ?>
+	<div class="row">
+		<input type="button" class="btn btn-primary" value="login" >
 	</div>
 
 <?php $this->endWidget(); ?>
